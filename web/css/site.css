@@ -10,8 +10,20 @@ body {
     padding: 0 0 60px;
 }
 
-.wrap > .container {
+.container-fluid {
+    padding: 0px;
+}
+
+.wrap > .container-fluid {
     padding: 70px 15px 20px;
+}
+
+.wrap .breadcrumb {
+	padding: 10px;
+}
+
+.wrap > .navbar .container {
+    width:100%;
 }
 
 .footer {
@@ -88,4 +100,58 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+
+.site-login {
+	margin-top: 100px; 
+	margin-left: auto; 
+	margin-right: auto;
+	width: 800px;
+}
+
+.site-error {
+	margin: 50px; 
+}
+
+.content-area {
+	/*padding: 10px;*/
+}
+
+.nav .active {
+	background: #eee;
+}
+
+.nav > li.disabled.nav-header > a {
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav hr {
+    margin: 1px;
+    height: 1px;
+	border-color: #E2E2E2;
+}
+
+.left-menu {
+	line-height: 1;
+}
+
+.content-area {
+	height: 100%;
+}
+
+.no-padding 
+{
+	padding: 0;
+}
+
+div.required label:after {
+	content: " *";
+	color: red;
+}
+
+div.checkbox label:after {
+	content: "" !important;
 }

@@ -1,5 +1,4 @@
 <?php
-
 Yii::setAlias('@tests', dirname(__DIR__) . '/tests');
 
 $params = require(__DIR__ . '/params.php');
@@ -10,6 +9,8 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'gii'],
     'controllerNamespace' => 'app\commands',
+    'sourceLanguage' => 'en-US',
+    'language' => 'ru-RU',
     'modules' => [
         'gii' => 'yii\gii\Module',
     ],
@@ -24,6 +25,10 @@ return [
                     'levels' => ['error', 'warning'],
                 ],
             ],
+        ],
+        'authManager' => [
+            'class' => 'app\components\RbacManager',
+            'defaultRoles' => ['guest'],
         ],
         'db' => $db,
     ],
